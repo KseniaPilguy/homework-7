@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='style.css'>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> homework 7 </h1>
+    <div id='task1'>
+
+        <p class='cordinateX'></p>
+        <p class='cordinateY'></p>
+    </div>
+
+
+    <button class='hide-btn'> Click here to hide button </button>
+
+    <button class='to-hide-elem'>Click here to hide text</button>
+    <p id='hide'>This is text</p>
+
+    <div class='move-it'></div>
+
+
+
+    <input id='input' onkeypress="go(event)" placeholder="Нажмите клавишу">
+    <p>Нажата клавиша: <span id='input-key'> _ </span> </p>
+    <p>Код нажатой клаавиши: <span id='code-input-key'> _ </span></p>
+
+
+    <ul class='list'>
+        <li>пункт</li>
+        <li>пункт</li>
+        <li>пункт</li>
+        <li>пункт</li>
+    </ul>
+    <button id='add-li'>Add new item</button>
+
+    <table id='table'>
+        <tr>
+            <th> Имя </th>
+            <th> Фамилия </th>
+        </tr>
+    </table>
+  
+    <label>
+        <input id='user-name' placeholder="Введите Ваше имя">
+        <input id='user-surname' placeholder="Введите Вашу фамилию">
+    </label>
+
+    <button id='send-info'>Отправить</button>
+
+    <ul id='select-list'>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <script src="main.js"></script>
+    <script>
+        function go(event) {
+            document.querySelector('#input-key').innerHTML = event.which;
+            document.querySelector('#code-input-key').innerHTML = String.fromCharCode(event.which);
+        }
+    </script>
+</body>
+
+</html>
